@@ -102,14 +102,14 @@
 
 /* Move Profile Pic */
 [data-is-self="true"] .avatar_f9f2ca{
-    left: unset;
-    right: 10px !important;
+	left: unset;
+	right: 10px !important;
 }
 
 /* Move Decoration */
 [data-is-self="true"] .avatarDecoration_f9f2ca{
-    left: unset;
-    right: 4px;
+	left: unset;
+	right: 4px;
 }
 /* Decoration size */
 .avatarDecoration_f9f2ca {
@@ -474,6 +474,7 @@
 		top: 9px;
 	}
 
+	/* Text, Username & User Picture Container */
 	>.contents_f9f2ca {
 		display: flex;
 		align-items: inherit;
@@ -482,6 +483,7 @@
 		width: 100%;
 		max-width: 600px;
 
+		/* Text Container */
 		>.markup_f8f345 {
 			max-width: 100%;
 			padding: 5px 15px;
@@ -491,10 +493,12 @@
 		}
 	}
 
+	/* Remove offset for overlap with text container when no text is present */
 	&:has(>.contents_f9f2ca>.markup_f8f345:empty)>.container_b558d0 {
 		top: initial;
 	}
 
+	/* Attachments Container */
 	>.container_b558d0 {
 		background-color: var(--messagebubble);
 		border-radius: var(--momo-messages-border-radius);
@@ -522,6 +526,7 @@
 [data-is-self="false"] .message_d5deea {
 	align-items: start;
 
+	/* Text, Username & User Picture Container */
 	>.contents_f9f2ca {
 		>.markup_f8f345 {
 			margin-left: 13px;
@@ -533,6 +538,7 @@
 		}
 	}
 
+	/* Attachments Container */
 	>.container_b558d0 {
 		margin-left: 13px;
 	}
@@ -556,6 +562,7 @@
 		padding-right: var(--custom-message-margin-left-content-cozy) !important;
 	}
 
+	/* Text, Username & User Picture Container */
 	>.contents_f9f2ca {
 		margin-right: 9px;
 
@@ -569,6 +576,7 @@
 		}
 	}
 
+	/* Attachments Container */
 	>.container_b558d0 {
 		margin-right: 9px;
 	}

@@ -102,14 +102,14 @@
 
 /* Move Profile Pic */
 [data-is-self="true"] .avatar_f9f2ca{
-	left: unset;
-	right: 10px !important;
+    left: unset;
+    right: 10px !important;
 }
 
 /* Move Decoration */
 [data-is-self="true"] .avatarDecoration_f9f2ca{
-	left: unset;
-	right: 4px;
+    left: unset;
+    right: 4px;
 }
 /* Decoration size */
 .avatarDecoration_f9f2ca {
@@ -515,7 +515,7 @@
 			}
 		}
 
-		&:has(:first-child:is(article.embedWrapper_b558d0) .embedProvider_b0068a>a[href*="youtube"]) {
+		&:has(article.embedWrapper_b558d0 .embedProvider_b0068a>a[href*="youtube"]) {
 			width: 97%;
 			max-width: 432px;
 		}

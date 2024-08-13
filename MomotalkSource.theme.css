@@ -482,7 +482,7 @@
 		width: 100%;
 		max-width: 600px;
 
-		.markup_f8f345 {
+		>.markup_f8f345 {
 			max-width: 100%;
 			padding: 5px 15px;
 			border-radius: var(--momo-messages-border-radius);
@@ -495,7 +495,7 @@
 		top: initial;
 	}
 
-	.container_b558d0 {
+	>.container_b558d0 {
 		background-color: var(--messagebubble);
 		border-radius: var(--momo-messages-border-radius);
 		width: fit-content;
@@ -519,7 +519,7 @@
 	align-items: start;
 
 	>.contents_f9f2ca {
-		.markup_f8f345 {
+		>.markup_f8f345 {
 			margin-left: 13px;
 		}
 
@@ -529,7 +529,7 @@
 		}
 	}
 
-	.container_b558d0 {
+	>.container_b558d0 {
 		margin-left: 13px;
 	}
 
@@ -565,7 +565,7 @@
 		}
 	}
 
-	.container_b558d0 {
+	>.container_b558d0 {
 		margin-right: 9px;
 	}
 

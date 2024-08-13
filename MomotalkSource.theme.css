@@ -515,7 +515,7 @@
 			}
 		}
 
-		&:has(:first-child:is(article.embedWrapper_b558d0)) {
+		&:has(:first-child:is(article.embedWrapper_b558d0) .embedProvider_b0068a>a[href*="youtube"]) {
 			width: 97%;
 			max-width: 432px;
 		}

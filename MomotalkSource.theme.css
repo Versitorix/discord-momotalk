@@ -498,7 +498,6 @@
 	>.container_b558d0 {
 		background-color: var(--messagebubble);
 		border-radius: var(--momo-messages-border-radius);
-		width: fit-content;
 		top: -9px;
 		padding: 20px;
 
@@ -510,6 +509,11 @@
 			.reaction_ec6b19.reactionMe_ec6b19 .reactionCount_ec6b19 {
 				color: var(--brand-560);
 			}
+		}
+
+		&:has(:first-child:is(article.embedWrapper_b558d0)) {
+			width: 97%;
+			max-width: 432px;
 		}
 	}
 }

@@ -474,29 +474,34 @@
 		top: 9px;
 	}
 
+	/* Text, Username & User Picture Container */
 	>.contents_f9f2ca {
 		display: flex;
 		align-items: inherit;
 		flex-direction: column;
 		z-index: 1;
+		width: 100%;
+		max-width: 600px;
 
-		.markup_f8f345 {
+		/* Text Container */
+		>.markup_f8f345 {
+			max-width: 100%;
 			padding: 5px 15px;
-			max-width: 600px;
 			border-radius: var(--momo-messages-border-radius);
 			background-color: var(--messagebubble);
 			overflow: visible;
 		}
 	}
 
+	/* Remove offset for overlap with text container when no text is present */
 	&:has(>.contents_f9f2ca>.markup_f8f345:empty)>.container_b558d0 {
 		top: initial;
 	}
 
-	.container_b558d0 {
+	/* Attachments Container */
+	>.container_b558d0 {
 		background-color: var(--messagebubble);
 		border-radius: var(--momo-messages-border-radius);
-		width: fit-content;
 		top: -9px;
 		padding: 20px;
 
@@ -509,6 +514,11 @@
 				color: var(--brand-560);
 			}
 		}
+
+		&:has(article.embedWrapper_b558d0 .embedProvider_b0068a>a[href*="youtube"]) {
+			width: 97%;
+			max-width: 432px;
+		}
 	}
 }
 
@@ -516,8 +526,9 @@
 [data-is-self="false"] .message_d5deea {
 	align-items: start;
 
+	/* Text, Username & User Picture Container */
 	>.contents_f9f2ca {
-		.markup_f8f345 {
+		>.markup_f8f345 {
 			margin-left: 13px;
 		}
 
@@ -527,7 +538,8 @@
 		}
 	}
 
-	.container_b558d0 {
+	/* Attachments Container */
+	>.container_b558d0 {
 		margin-left: 13px;
 	}
 
@@ -550,6 +562,7 @@
 		padding-right: var(--custom-message-margin-left-content-cozy) !important;
 	}
 
+	/* Text, Username & User Picture Container */
 	>.contents_f9f2ca {
 		margin-right: 9px;
 
@@ -563,7 +576,8 @@
 		}
 	}
 
-	.container_b558d0 {
+	/* Attachments Container */
+	>.container_b558d0 {
 		margin-right: 9px;
 	}
 
